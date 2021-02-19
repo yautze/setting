@@ -33,7 +33,8 @@ call plug#begin(s:plug_dir)
 
   " FZF
   Plug 'junegunn/fzf.vim' 
-  Plug 'junegunn/fzf'
+  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+  Plug 'yuki-yano/fzf-preview.vim', { 'branch': 'release/rpc' }
   Plug 'antoinemadec/coc-fzf', {'branch': 'release'}
 
   " other

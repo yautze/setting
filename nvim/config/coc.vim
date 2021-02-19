@@ -167,6 +167,13 @@ if isdirectory(expand('~/.vim/plugged/coc.nvim'))
   " Resume latest coc list
   nnoremap <silent> <space>p       :<C-u>CocFzfListResume<CR>
 
+  " 查詢實做的interface func 
+  nnoremap <silent> <space>i       :<C-u>CocCommand fzf-preview.CocImplementations<CR>
+  " 查詢git狀態
+  nnoremap <silent> <space>gs    :<C-u>CocCommand fzf-preview.GitStatus<CR>
+  " 查詢git的動作
+  nnoremap <silent> <space>ga    :<C-u>CocCommand fzf-preview.GitActions<CR>
+
   " 開啟資料夾
   " 左邊那排
   nmap <space>e :CocCommand explorer <cr>

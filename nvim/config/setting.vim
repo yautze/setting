@@ -6,6 +6,7 @@
   set clipboard=unnamed         " 允許使用複製貼上
   filetype plugin indent on     " 自動偵測檔案類型
   set encoding=utf-8
+  set cursorline                " 加強顯示鼠標位置
   scriptencoding utf-8
 
 
