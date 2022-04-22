@@ -40,3 +40,6 @@
   map <C-L> <C-W>l<C-W>_
   map <C-H> <C-W>h<C-W>_
 
+  nmap <space>w :w <CR>
+  nmap <space>q :q <CR>
+

@@ -1,4 +1,8 @@
 {
+    "solargraph.diagnostics": true,
+    "solargraph.autoformat": true,
+    "solargraph.formatting": true,
+    "solargraph.hover": true,
     "json.enable": false,
     "json.format.enable": false,
     "explorer.presets": {
@@ -100,6 +104,7 @@
         "javascript",
         "json",
         "go",
+        "ruby",
         "proto"
     ],
     "languageserver": {
@@ -117,6 +122,14 @@
                 "usePlaceholders": true,
                 "completeUnimported": true
             }
+        },
+        "sorbet": {
+            "command": "srb",
+            "args": ["tc", "--typed", "true", "--enable-all-experimental-lsp-features", "--lsp", "--disable-watchman", "--dir", "."],
+            "filetypes": ["ruby"],
+            "rootPatterns": ["sorbet/config"],
+            "initializationOptions": {},
+            "settings": {}
         },
         "dockerfile": {
             "command": "docker-langserver",

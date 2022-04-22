@@ -12,6 +12,9 @@ call plug#begin(s:plug_dir)
   Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' , 'for':'go'}
   Plug 'tweekmonster/hl-goimport.vim', { 'for': 'go' }
 
+  " Ruby
+  Plug 'tpope/vim-rails'
+
   " EasyMotion - 快速移動
   Plug 'easymotion/vim-easymotion'
 

@@ -10,10 +10,15 @@ if filereadable(expand('~/.config/nvim/config/plug.vim'))
     source ~/.config/nvim/config/vim-go.vim
   endif
 
+  " import vim-ruby config
+  if filereadable(expand('~/.config/nvim/config/vim-ruby.vim'))
+    source ~/.config/nvim/config/vim-ruby.vim
+  endif
+
+
   " import coc-vim config
   if filereadable(expand('~/.config/nvim/config/coc.vim'))
     source ~/.config/nvim/config/coc.vim
   endif
-
 endif
 
