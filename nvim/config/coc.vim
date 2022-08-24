@@ -1,9 +1,7 @@
 " For coc config
 
 if isdirectory(expand('~/.vim/plugged/coc.nvim'))
-  
-  " Give more space for displaying messages.
-  set cmdheight=2
+  " Give more space for displaying messages. set cmdheight=2
 
   " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
   " delays and poor user experience.
@@ -170,9 +168,12 @@ if isdirectory(expand('~/.vim/plugged/coc.nvim'))
   " 查詢實做的interface func 
   nnoremap <silent> <space>i       :<C-u>CocCommand fzf-preview.CocImplementations<CR>
   " 查詢git狀態
-  nnoremap <silent> <space>gs    :<C-u>CocCommand fzf-preview.GitStatus<CR>
+  nnoremap <silent> <space>gs      :<C-u>CocCommand fzf-preview.GitStatus<CR>
   " 查詢git的動作
-  nnoremap <silent> <space>ga    :<C-u>CocCommand fzf-preview.GitActions<CR>
+  nnoremap <silent> <space>ga      :<C-u>CocCommand fzf-preview.GitActions<CR>
+  " 查詢file
+  nnoremap <silent> <space>p       :<C-u>CocCommand fzf-preview.FromResources project_mru git<CR>
+  nnoremap          <space>f       :<C-u>CocCommand fzf-preview.ProjectGrep<Space>
 
   " 開啟資料夾
   " 左邊那排

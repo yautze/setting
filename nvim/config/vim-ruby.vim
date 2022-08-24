@@ -1,6 +1,6 @@
 " For vim-ruby config - ruby
 
-if isdirectory(expand('~/.vim/plugged/vim-go'))
+if isdirectory(expand('~/.vim/plugged/vim-rails'))
   " Operator highlighting 
   let ruby_operators        = 1
   let ruby_pseudo_operators = 1

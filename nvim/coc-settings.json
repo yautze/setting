@@ -123,14 +123,6 @@
                 "completeUnimported": true
             }
         },
-        "sorbet": {
-            "command": "srb",
-            "args": ["tc", "--typed", "true", "--enable-all-experimental-lsp-features", "--lsp", "--disable-watchman", "--dir", "."],
-            "filetypes": ["ruby"],
-            "rootPatterns": ["sorbet/config"],
-            "initializationOptions": {},
-            "settings": {}
-        },
         "dockerfile": {
             "command": "docker-langserver",
             "filetypes": [

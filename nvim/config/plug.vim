@@ -40,7 +40,11 @@ call plug#begin(s:plug_dir)
   Plug 'yuki-yano/fzf-preview.vim', { 'branch': 'release/rpc' }
   Plug 'antoinemadec/coc-fzf', {'branch': 'release'}
 
+  " AG search
+  Plug 'rking/ag.vim'
+
   " other
   Plug 'itchyny/lightline.vim'
+  Plug 'tpope/vim-fugitive'
 
 call plug#end()
